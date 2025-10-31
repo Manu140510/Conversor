@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"></link>
+    <script src="script.js" defer></script>
+</head>
+<body class="body">
+
+    <h1 class="rodape">Conversor de Temperatura</h1>
+
+    <div class="caixaMaior">
+        <div style="display: block;">
+            <label for="Celsius"> Celsius (°C)
+            <input type="number" id="celsius" class="caixa1" placeholder="0" oninput="convertTemperature(event.target.id,event.target.value)">
+        </div>
+
+        <div style="display: block;" >
+            <label for="Fahrenheit"> Fahrenheit (°F)</label>
+            <input type="number" id="fahrenheit" class="caixa2" placeholder="32" oninput="convertTemperature(event.target.id,event.target.value)">
+        </div>
+
+        <div style="display: block;" >
+            <label for="kelvin"> Kelvin (K)</label>
+            <input type="number" id="kelvin" class="caixa3" placeholder="273.15" oninput="convertTemperature(event.target.id,event.target.value)">
+        </div>
+    </div>
+</body>
+</html>
